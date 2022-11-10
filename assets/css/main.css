@@ -116,6 +116,10 @@ input, select, textarea {
 /* Type */
 
 	html {
+		font-size: 12pt;
+	}
+
+	/*html {
 		font-size: 16pt;
 	}
 
@@ -141,7 +145,7 @@ input, select, textarea {
 				font-size: 10pt;
 			}
 
-		}
+		}*/
 
 	body {
 		color: #212931;
