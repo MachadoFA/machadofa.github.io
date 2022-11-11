@@ -115,11 +115,11 @@ input, select, textarea {
 
 /* Type */
 
-	html {
-		font-size: 12pt;
-	}
-
 	/*html {
+		font-size: 12pt;
+	}*/
+
+	html {
 		font-size: 16pt;
 	}
 
@@ -145,7 +145,7 @@ input, select, textarea {
 				font-size: 10pt;
 			}
 
-		}*/
+		}
 
 	body {
 		color: #212931;
@@ -2582,7 +2582,7 @@ input, select, textarea {
 		}
 
 		.image.left, .image.right {
-			max-width: 40%;
+			max-width: 50%;
 		}
 
 			.image.left img, .image.right img {
