@@ -8,105 +8,76 @@
 	"buffers":
 	[
 		{
-			"file": "generic.html",
+			"file": "assets/css/main.css",
 			"settings":
 			{
-				"buffer_size": 4226,
+				"buffer_size": 84172,
 				"encoding": "UTF-8",
-				"line_ending": "Windows"
+				"line_ending": "Unix"
 			},
 			"undo_stack":
 			[
 				[
-					5,
+					6,
 					1,
-					"paste",
+					"insert",
+					{
+						"characters": "png"
+					},
+					"BAAAAE8HAAAAAAAAUAcAAAAAAAAAAAAAUAcAAAAAAABQBwAAAAAAAAMAAABqcGdQBwAAAAAAAFEHAAAAAAAAAAAAAFEHAAAAAAAAUgcAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAATwcAAAAAAABSBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					11,
+					3,
+					"left_delete",
 					null,
-					"AgAAAGYCAAAAAAAAbQIAAAAAAAAAAAAAbQIAAAAAAABtAgAAAAAAAAsAAABNYWNoYWRvIGxhYg",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABmAgAAAAAAAHECAAAAAAAAAAAAAAAA8L8"
+					"AwAAAFEHAAAAAAAAUQcAAAAAAAABAAAAZ1AHAAAAAAAAUAcAAAAAAAABAAAAbk8HAAAAAAAATwcAAAAAAAABAAAAcA",
+					"AQAAAAAAAAABAAAAUgcAAAAAAABSBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					12,
+					1,
+					"insert",
+					{
+						"characters": "jpg"
+					},
+					"AwAAAE8HAAAAAAAAUAcAAAAAAAAAAAAAUAcAAAAAAABRBwAAAAAAAAAAAABRBwAAAAAAAFIHAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAATwcAAAAAAABPBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					13,
+					1,
+					"insert_completion",
+					{
+						"completion": "jpeg",
+						"format": "text",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "jpeg"
+					},
+					"AgAAAE8HAAAAAAAATwcAAAAAAAADAAAAanBnTwcAAAAAAABTBwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAUgcAAAAAAABSBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					15,
+					1,
+					"left_delete",
+					null,
+					"AQAAAFEHAAAAAAAAUQcAAAAAAAABAAAAZQ",
+					"AQAAAAAAAAABAAAAUgcAAAAAAABSBwAAAAAAAAAAAAAAAPC/"
 				]
 			]
 		},
 		{
-			"file": "people.html",
+			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 6912,
-				"encoding": "UTF-8",
+				"buffer_size": 10260,
 				"line_ending": "Windows"
 			},
 			"undo_stack":
 			[
-				[
-					3,
-					6,
-					"left_delete",
-					null,
-					"BgAAAEYSAAAAAAAARhIAAAAAAAABAAAAe0USAAAAAAAARRIAAAAAAAABAAAAaEQSAAAAAAAARBIAAAAAAAABAAAAcEMSAAAAAAAAQxIAAAAAAAABAAAAbUISAAAAAAAAQhIAAAAAAAABAAAAZUESAAAAAAAAQRIAAAAAAAABAAAAXA",
-					"AQAAAAAAAAABAAAARxIAAAAAAABHEgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					5,
-					1,
-					"left_delete",
-					null,
-					"AQAAAEcSAAAAAAAARxIAAAAAAAABAAAAfQ",
-					"AQAAAAAAAAABAAAASBIAAAAAAABIEgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					14,
-					1,
-					"paste",
-					null,
-					"AQAAAEESAAAAAAAARBIAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAQRIAAAAAAABBEgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					22,
-					1,
-					"paste",
-					null,
-					"AQAAAEoSAAAAAAAAThIAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAShIAAAAAAABKEgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					25,
-					1,
-					"insert",
-					{
-						"characters": "i"
-					},
-					"AgAAAEwSAAAAAAAATRIAAAAAAAAAAAAATRIAAAAAAABNEgAAAAAAAAEAAABi",
-					"AQAAAAAAAAABAAAATRIAAAAAAABMEgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					28,
-					1,
-					"insert",
-					{
-						"characters": "o"
-					},
-					"AgAAAEISAAAAAAAAQxIAAAAAAAAAAAAAQxIAAAAAAABDEgAAAAAAAAEAAABi",
-					"AQAAAAAAAAABAAAAQxIAAAAAAABCEgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					29,
-					1,
-					"left_delete",
-					null,
-					"AQAAAEISAAAAAAAAQhIAAAAAAAABAAAAbw",
-					"AQAAAAAAAAABAAAAQxIAAAAAAABDEgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					30,
-					1,
-					"insert",
-					{
-						"characters": "i"
-					},
-					"AQAAAEISAAAAAAAAQxIAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAQhIAAAAAAABCEgAAAAAAAAAAAAAAAPC/"
-				]
 			]
 		}
 	],
@@ -207,12 +178,18 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/fabiomachado/LOCAL/machadofa.github.io"
+		"/Users/fabiomachado/LOCAL/machadofa.github.io",
+		"/Users/fabiomachado/LOCAL/machadofa.github.io/assets",
+		"/Users/fabiomachado/LOCAL/machadofa.github.io/assets/css",
+		"/Users/fabiomachado/LOCAL/machadofa.github.io/assets/sass",
+		"/Users/fabiomachado/LOCAL/machadofa.github.io/assets/sass/base"
 	],
 	"file_history":
 	[
-		"/Users/fabiomachado/LOCAL/machadofa.github.io/index.html",
 		"/Users/fabiomachado/LOCAL/machadofa.github.io/people.html",
+		"/Users/fabiomachado/LOCAL/machadofa.github.io/generic.html",
+		"/Users/fabiomachado/LOCAL/machadofa.github.io/generic copy 2.html",
+		"/Users/fabiomachado/LOCAL/machadofa.github.io/index.html",
 		"/Users/fabiomachado/LOCAL/machadofa.github.io/publications.html",
 		"/Users/fabiomachado/LOCAL/machadofa.github.io/research.html",
 		"/Users/fabiomachado/LOCAL/machadofa.github.io/software.html",
@@ -336,13 +313,11 @@
 		"/Users/fmachado/Dropbox/__R/Working Directory/Cap_drift_Clade_test_CARNIVORA/job_test4.pbs",
 		"/Users/fmachado/Dropbox/__R/Working Directory/Cap_drift_Clade_test_CARNIVORA/job_test3.pbs",
 		"/Users/fmachado/Dropbox/__R/Working Directory/Cap_drift_Clade_test_CARNIVORA/job_test2.pbs",
-		"/Users/fmachado/Dropbox/__R/Working Directory/Cap_drift_Clade_test_CARNIVORA/job_test1.pbs",
-		"/Users/fmachado/Dropbox/__R/Working Directory/Cap_drift_Clade_test_CARNIVORA/job_test.pbs",
-		"/Users/fmachado/Library/Containers/com.apple.mail/Data/Library/Mail Downloads/171D5B66-0037-4946-9381-5A96C831F167/beagle_missing_parallel.pbs"
+		"/Users/fmachado/Dropbox/__R/Working Directory/Cap_drift_Clade_test_CARNIVORA/job_test1.pbs"
 	],
 	"find":
 	{
-		"height": 24.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -356,6 +331,9 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"cover",
+			"\t\t\t\t\t\t\t",
+			"cover",
 			"img",
 			"emorph2",
 			"emorph",
@@ -390,24 +368,24 @@
 			[
 				{
 					"buffer": 0,
-					"file": "generic.html",
+					"file": "assets/css/main.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4226,
+						"buffer_size": 84172,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								621,
-								621
+								1873,
+								1873
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": false
 						},
@@ -421,20 +399,20 @@
 				},
 				{
 					"buffer": 1,
-					"file": "people.html",
+					"file": "index.html",
 					"selected": true,
-					"semi_transient": false,
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 6912,
+						"buffer_size": 10260,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4675,
-								4675
+								255,
+								255
 							]
 						],
 						"settings":
@@ -444,7 +422,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1339.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -456,7 +434,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 38.0
+		"height": 24.0
 	},
 	"input":
 	{
