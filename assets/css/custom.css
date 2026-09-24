@@ -1,0 +1,58 @@
+/* Site-specific styles layered on top of the HTML5 UP "Massively" theme. */
+
+/* Brand colors used in the "emorph2" wordmark */
+.c-e { color: #FF9535; }
+.c-morph { color: #FF00FE; }
+.c-2 { color: #EE018F; }
+
+/* Home page intro */
+#intro h1 {
+	margin: 0;
+	font-size: 3em;
+}
+
+#intro .lab-name {
+	margin: 0;
+	font-size: 2em;
+}
+
+/* Body text */
+.justify {
+	text-align: justify;
+}
+
+/* Profile photos (People page) */
+.image.avatar {
+	width: 10vw;
+	min-width: 80px;
+}
+
+.person {
+	clear: both;
+	padding-top: 1.5rem;
+}
+
+.person > :not(.image) {
+	overflow: hidden; /* keep text in a column beside the photo */
+}
+
+.person::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Software thumbnails */
+.image.thumb {
+	width: 137px;
+}
+
+.software-item {
+	clear: both;
+}
+
+.software-item::after {
+	content: "";
+	display: table;
+	clear: both;
+}
