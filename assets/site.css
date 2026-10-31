@@ -192,6 +192,8 @@ main { min-height:calc(100svh - 200px); }
 .news-figure figcaption { margin-top:16px; }
 .news-figure figcaption a,.featured figcaption a { text-decoration:underline; text-underline-offset:2px; }
 .news-entry--text { grid-template-columns:minmax(0,730px); }
+.news-entry--welcome { grid-template-columns:minmax(0,1fr) 240px; }
+.news-entry--welcome .prose { max-width:730px; }
 @media(max-width:1100px) {
   .reading-layout { grid-template-columns:190px minmax(0,1fr); gap:38px; }
   .people-grid { column-gap:30px; }
@@ -210,6 +212,7 @@ main { min-height:calc(100svh - 200px); }
   .course { grid-template-columns:230px minmax(0,1fr); gap:30px; }
   .news-entry { grid-template-columns:1fr; gap:30px; }
   .news-figure { width:100%; max-width:650px; }
+  .news-entry--welcome { grid-template-columns:minmax(0,1fr) 200px; gap:32px; }
 }
 @media(max-width:620px) {
   .page-head { padding:36px 0 30px; }
@@ -233,6 +236,8 @@ main { min-height:calc(100svh - 200px); }
   .course-term { margin:0; }
   .teaching-note { padding:22px; }
   .news-copy h2 { font-size:29px; }
+  .news-entry--welcome { grid-template-columns:minmax(0,1fr); gap:24px; }
+  .news-entry--welcome .news-figure { max-width:200px; }
   .news-entry + .news-entry { margin-top:35px; padding-top:30px; }
   .news-preview { gap:20px; }
 }
