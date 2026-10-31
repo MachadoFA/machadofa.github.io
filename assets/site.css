@@ -62,9 +62,12 @@
     .recent article + article { margin-top:23px; padding-top:20px; border-top:1px solid var(--line); }
     .recent h3 { font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; margin:0; letter-spacing:0; }
     .recent .meta { margin-bottom:6px; }
-    .news-preview { display:grid; grid-template-columns:70px minmax(0,1fr); gap:18px; align-items:start; }
-    .news-preview img { width:70px; height:70px; object-fit:contain; }
-    .news-preview--text { grid-template-columns:1fr; }
+    .news-preview { display:flex; flex-direction:column; gap:24px; min-width:0; }
+    .news-preview figure { width:100%; margin:0; margin-top:auto; }
+    .news-preview figure > a { display:block; }
+    .news-preview figcaption { margin-top:12px; }
+    .news-preview figcaption a { text-decoration:underline; text-underline-offset:2px; }
+    .news-preview img { width:100%; height:auto; aspect-ratio:16 / 9; object-fit:contain; }
     .news-preview p:not(.meta) { margin:8px 0 0; font-size:13px; line-height:1.65; color:var(--muted); }
     .recent .all-news { display:inline-block; margin-top:24px; font-size:12px; }
     .collection { display:grid; grid-template-columns:1fr 1fr; gap:55px; align-items:center; border-top:1px solid var(--line); padding:45px 0 60px; }
@@ -229,7 +232,5 @@ main { min-height:calc(100svh - 200px); }
   .teaching-note { padding:22px; }
   .news-copy h2 { font-size:29px; }
   .news-entry + .news-entry { margin-top:35px; padding-top:30px; }
-  .news-preview { grid-template-columns:56px minmax(0,1fr); gap:15px; }
-  .news-preview img { width:56px; height:56px; }
-  .news-preview--text { grid-template-columns:1fr; }
+  .news-preview { gap:20px; }
 }
