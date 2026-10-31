@@ -164,8 +164,10 @@ main { min-height:calc(100svh - 200px); }
 .publication-year { padding-bottom:30px; }
 .publication-year > h2 { font-size:30px; color:var(--pink); margin-bottom:8px; }
 .year-content { display:grid; grid-template-columns:minmax(0,1fr); gap:24px; }
-.year-content.with-cover { grid-template-columns:minmax(0,1fr) 105px; }
-.journal-cover { margin:23px 0 0; }
+.publication--with-cover { display:grid; grid-template-columns:minmax(0,1fr) 105px; gap:24px; align-items:start; }
+.journal-cover { margin:0; }
+.journal-cover > a { display:block; }
+.journal-cover figcaption { margin-top:8px; font-size:10px; text-align:center; }
 .journal-cover img { width:105px; height:auto; }
 .publication { border-bottom:1px solid var(--line); padding:20px 0 23px; }
 .publication p { margin:0; font-size:12px; line-height:1.9; color:var(--muted); }
@@ -223,8 +225,8 @@ main { min-height:calc(100svh - 200px); }
   .person-profile img { width:80px; }
   .person-profile .person-name { font-size:23px; }
   .publication-search { padding:18px; }
-  .year-content.with-cover { grid-template-columns:minmax(0,1fr); }
-  .journal-cover { display:none; }
+  .publication--with-cover { grid-template-columns:minmax(0,1fr); gap:16px; }
+  .journal-cover { width:105px; }
   .publication b { font-size:20px; }
   .course { grid-template-columns:1fr; gap:15px; padding:28px 0; }
   .course h2 { font-size:28px; margin-bottom:12px; }
@@ -233,4 +235,21 @@ main { min-height:calc(100svh - 200px); }
   .news-copy h2 { font-size:29px; }
   .news-entry + .news-entry { margin-top:35px; padding-top:30px; }
   .news-preview { gap:20px; }
+}
+
+/* Journal covers expand without leaving the publication list. */
+.cover-link { cursor:zoom-in; }
+html.cover-viewer-open { overflow:hidden; }
+.cover-viewer { width:fit-content; max-width:min(1000px,calc(100vw - 32px)); max-height:calc(100dvh - 32px); padding:20px; border:0; background:white; color:var(--ink); }
+.cover-viewer[open] { display:flex; flex-direction:column; gap:16px; }
+.cover-viewer::backdrop { background:rgba(0,0,0,.75); }
+.cover-viewer-header { display:flex; justify-content:space-between; align-items:flex-start; gap:24px; flex-shrink:0; }
+.cover-viewer-header h2 { max-width:700px; margin:0; font:21px/1.35 Georgia,serif; letter-spacing:0; }
+.cover-viewer-close { flex-shrink:0; min-height:44px; padding:8px 12px; border:1px solid var(--line); background:white; color:var(--ink); font:13px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; cursor:pointer; }
+.cover-viewer > img { min-height:0; width:auto; height:auto; max-width:100%; max-height:70dvh; object-fit:contain; align-self:center; }
+.cover-viewer > .text-link { align-self:flex-start; flex-shrink:0; font-size:13px; }
+@media(max-width:620px) {
+  .cover-viewer { padding:16px; }
+  .cover-viewer-header { gap:16px; }
+  .cover-viewer-header h2 { font-size:17px; }
 }

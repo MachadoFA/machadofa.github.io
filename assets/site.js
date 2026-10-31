@@ -55,3 +55,38 @@ if (search) {
   search.addEventListener('search', update);
   update();
 }
+
+
+// Keep full-size image links usable when the modal viewer is unavailable.
+const coverViewer = document.querySelector('#cover-viewer');
+if (coverViewer && typeof coverViewer.showModal === 'function') {
+  const coverImage = document.querySelector('#cover-viewer-image');
+  const coverTitle = document.querySelector('#cover-viewer-title');
+  const coverPaper = document.querySelector('#cover-viewer-paper');
+  let coverOpener = null;
+  coverViewer.hidden = false;
+  document.querySelectorAll('.cover-link').forEach(link => {
+    link.addEventListener('click', event => {
+      if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      if (coverViewer.open) return;
+      coverOpener = link;
+      coverImage.src = link.href;
+      coverImage.alt = link.querySelector('img').alt;
+      coverTitle.textContent = link.closest('.publication').querySelector('b').textContent;
+      coverPaper.href = link.dataset.paperUrl;
+      coverViewer.showModal();
+      document.documentElement.classList.add('cover-viewer-open');
+    });
+  });
+  coverViewer.querySelector('.cover-viewer-close').addEventListener('click', () => coverViewer.close());
+  coverViewer.addEventListener('click', event => {
+    if (event.target !== coverViewer) return;
+    const bounds = coverViewer.getBoundingClientRect();
+    if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) coverViewer.close();
+  });
+  coverViewer.addEventListener('close', () => {
+    document.documentElement.classList.remove('cover-viewer-open');
+    if (coverOpener && coverOpener.isConnected) coverOpener.focus();
+  });
+}
