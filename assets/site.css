@@ -144,6 +144,7 @@ main { min-height:calc(100svh - 200px); }
 .research-figure.wide { float:none; width:100%; max-width:none; margin:26px 0 0; }
 .research-figure.wide img { max-height:none; }
 .group-heading { font-size:30px; margin-bottom:30px; }
+.people-section { margin-top:42px; }
 .principal { display:grid; grid-template-columns:200px minmax(0,1fr); gap:45px; padding-bottom:43px; margin-bottom:42px; border-bottom:1px solid var(--line); }
 .principal img { width:200px; aspect-ratio:1; object-fit:cover; }
 .person-name { font-size:29px; margin:0 0 17px; }
@@ -153,6 +154,7 @@ main { min-height:calc(100svh - 200px); }
 .person-profile img { width:100px; aspect-ratio:1; object-fit:cover; object-position:center 30%; }
 .person-profile .person-name { font-size:24px; margin-bottom:14px; }
 .person-profile .prose { font-size:14px; line-height:1.8; }
+.people-grid .person-profile--text { grid-template-columns:minmax(0,1fr); }
 .publication-intro { margin:0 0 25px; color:var(--muted); font-size:13px; }
 .enhancement { display:none; }
 .js .enhancement { display:block; }
